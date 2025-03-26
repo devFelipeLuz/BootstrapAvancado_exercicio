@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="head">
+        <div class="container">
+            <div class="navbar navbar-expand-lg">
+                <h1>Portal Games</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav nav-pills navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#noticias">Notícias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produtos">Produtos</a>
+                        </li>
+                    </ul>
+                    <div id="modal-cadastro">
+                        <!-- Botão que aciona o modal -->
+                        <button id="btn-cadastro" type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                            data-bs-target="#cadastrar"><strong>Cadastre-se</strong>
+                        </button>
+
+                        <!-- Modal -->
+                        <div id="cadastrar" class="modal fade" aria-labelledby="cadastrarLabel" aria-hidden="true"
+                            data-bs-backdrop="static">
+                            <div class="modal-dialog">
+                                <div class="modal-content bg-dark text-white">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="cadastrarLabel">Formulário de cadastro</h5>
+                                        <!-- Botão de fechar o modal -->
+                                        <button data-bs-dismiss="modal" type="button" class="btn-close"></button>
+                                    </div>
+
+                                    <div class="modal-body text-start">
+                                        <form>
+                                            <label class="form-label" for="nome">Nome:</label>
+                                            <input class="form-control" type="text" id="nome">
+
+                                            <label class="form-label" for="senha">Senha:</label>
+                                            <input class="form-control" type="password" id="senha">
+
+                                            <label class="form-label" for="email">E-mail:</label>
+                                            <input class="form-control" type="email" id="email">
+                                            <div class="form-check form-switch">
+                                                <label class="form-check-label" for="termos"><h5>Lí e aceito os termos do
+                                                    site</h5></label>
+                                                <input class="form-check-input" type="checkbox" id="termos">
+                                            </div>
+
+                                            <button type="submit"
+                                                class="btn btn-success" id="btn-cadastro"><strong>Cadastrar</strong></button>
+                                            <button type="reset" data-bs-dismiss="modal"
+                                                class="btn btn-danger" id="btn-cancelar"><strong>Cancelar</strong></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img class="d-block w-100"
+                    src="https://www.boletimnerd.com.br/wp-content/uploads/2019/02/Os-melhores-games-dos-anos-2000-FB.jpg" />
+                <div class="carousel-caption">
+                    <h2>Resident Evil</h2>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img class="d-block w-100"
+                    src="https://www.vidadegamer.com.br/wp-content/uploads/2023/12/dead-space.jpg" />
+                <div class="carousel-caption">
+                    <h2>Dead Space</h2>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img class="d-block w-100"
+                    src="https://www.vidadegamer.com.br/wp-content/uploads/2023/12/final-fantasy-16.jpg" />
+                <div class="carousel-caption">
+                    <h2>Final Fantasy</h2>
+                </div>
+            </div>
+        </div>
+        <button data-bs-target="#carousel" data-bs-slide="prev" type="button" class="carousel-control-prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel" data-bs-slide="next" type="button" class="carousel-control-next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+        </div>
+    </div>
+    <div class="container-fluid p-0 remove-margin">
+        <div data-bs-spy="scroll" data-bs-target="#head" id="spy">
+            <section id="noticias">
+                <h2>Notícias</h2>
+                <div id="conteudo">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <article class="card bg-dark text-white">
+                                <header class="card-header">
+                                    <h4 class="card-title text-center">O que está acontecendo no mundo dos Games?</h4>
+                                </header>
+                                <img
+                                    src="https://blog.br.playstation.com/tachyon/sites/4/2024/07/135865ad7d929b2485f258bce1180f449ed488a8.jpg?resize=1088%2C612&crop_strategy=smart">
+                                <div class="card-body">
+                                    <h5 class="card-subtitle">Capcom diz:</h5>
+                                    <p class="card-text">
+                                        Conteúdo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
+                                        suscipit
+                                        quasi
+                                        itaque doloribus porro soluta expedita error natus modi aliquid, sapiente
+                                        tempore,
+                                        omnis
+                                        nam iste voluptas perspiciatis quaerat nulla inventore?
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Leia mais</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <article class="card bg-dark text-white">
+                                <header class="card-header">
+                                    <h4 class="card-title text-center">Pode te processar?</h4>
+                                </header>
+                                <img src="https://t.ctcdn.com.br/s7w99btIGAya50_Tg8gz8-Acleg=/i631132.png">
+                                <div class="card-body">
+                                    <h5 class="card-subtitle">Veja o que a Nintendo está fazendo:</h5>
+                                    <p class="card-text">
+                                        Conteúdo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
+                                        suscipit
+                                        quasi
+                                        itaque doloribus porro soluta expedita error natus modi aliquid, sapiente
+                                        tempore,
+                                        omnis
+                                        nam iste voluptas perspiciatis quaerat nulla inventore?
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Leia mais</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <article class="card bg-dark text-white">
+                                <header class="card-header">
+                                    <h4 class="card-title text-center">Um lixo ou uma lenda?</h4>
+                                </header>
+                                <img
+                                    src="https://cdn.maioresemelhores.com/imagens/mm-melhores-jogos-para-android-free-fire.jpg">
+                                <div class="card-body">
+                                    <h5 class="card-subtitle">Tire suas conclusões com esses dados:</h5>
+                                    <p class="card-text">
+                                        Conteúdo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
+                                        suscipit
+                                        quasi
+                                        itaque doloribus porro soluta expedita error natus modi aliquid, sapiente
+                                        tempore,
+                                        omnis
+                                        nam iste voluptas perspiciatis quaerat nulla inventore?
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Leia mais</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <article class="card bg-dark text-white">
+                                <header class="card-header">
+                                    <h4 class="card-title text-center">Vai falir?</h4>
+                                </header>
+                                <img src="https://t2.tudocdn.net/628932?w=1920">
+                                <div class="card-body">
+                                    <h5 class="card-subtitle">Especialistas dizem:</h5>
+                                    <p class="card-text">
+                                        Conteúdo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
+                                        suscipit
+                                        quasi
+                                        itaque doloribus porro soluta expedita error natus modi aliquid, sapiente
+                                        tempore,
+                                        omnis
+                                        nam iste voluptas perspiciatis quaerat nulla inventore?
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Leia mais</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="produtos">
+                <h2>Produtos</h2>
+                <div id="conteudo">
+                    <nav id="menu-produtos" class="nav nav-pills">
+                        <button data-bs-toggle="tab" data-bs-target="#abaConsole" class="nav-link active"
+                            type="button">Consoles</button>
+                        <button data-bs-toggle="tab" data-bs-target="#abaJogos" class="nav-link"
+                            type="button">Jogos</button>
+                    </nav>
+                    <div class="tab-content">
+                        <div id="abaConsole" class="tab-pane active">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <article class="card bg-dark text-white">
+                                        <img
+                                            src="https://a-static.mlcdn.com.br/800x600/playstation-5-slim-edicao-digital-2024-1tb-1-controle-branco-sony-com-2-jogos/magazineluiza/238279100/538ff780da4b66136c4c6ca3981b42c4.jpg" />
+                                        <div class="card-body">
+                                            <h4 class="card-title">Playstation 5</h4>
+                                            <p class="card-text">
+                                                <strong>R$ 3000,00</strong>
+                                            </p>
+                                            <a href="#" class="btn btn-primary"><strong>Ver anúncio</strong></a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <article class="card bg-dark text-white">
+                                        <img
+                                            src="https://cdn.awsli.com.br/2500x2500/53/53761/produto/312721643/01-5irmxpqpev.jpg" />
+                                        <div class="card-body">
+                                            <h4 class="card-title">Xbox - Series X</h4>
+                                            <p class="card-text">
+                                                <strong>R$ 4499,00</strong>
+                                            </p>
+                                            <a href="#" class="btn btn-primary"><strong>Ver anúncio</strong></a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <article class="card bg-dark text-white">
+                                        <img
+                                            src="https://cdn.awsli.com.br/2500x2500/1919/1919257/produto/149069982/8b1024a5ed.jpg" />
+                                        <div class="card-body">
+                                            <h4 class="card-title">Nintendo Switch</h4>
+                                            <p class="card-text">
+                                                <strong>R$ 2199,00</strong>
+                                            </p>
+                                            <a href="#" class="btn btn-primary"><strong>Ver anúncio</strong></a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <article class="card bg-dark text-white">
+                                        <img
+                                            src="https://www.koerich.com.br/ccstore/v1/images/?source=/file/v3090524699665355596/products/4099000.01.jpg&width=750&height=750" />
+                                        <div class="card-body">
+                                            <h4 class="card-title">Xbox - Series S</h4>
+                                            <p class="card-text">
+                                                <strong>R$ 1899,00</strong>
+                                            </p>
+                                            <a href="#" class="btn btn-primary"><strong>Ver anúncio</strong></a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="abaJogos" class="tab-pane">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <article class="card bg-dark text-white">
+                                        <img
+                                            src="https://cdn.awsli.com.br/2470/2470063/produto/236399403/610aw15jvkl-_ac_sx679_-dbih24yzmn.jpg" />
+                                        <div class="card-body">
+                                            <h4 class="card-title">Assassin's Creed Mirage - Mídia Física</h4>
+                                            <p class="card-text">
+                                                <strong>R$ 249,00</strong>
+                                            </p>
+                                            <a href="#" class="btn btn-primary"><strong>Ver anúncio</strong></a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <article class="card bg-dark text-white">
+                                        <img
+                                            src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/595532/Jogo-Baldurs-Gate-3-PS5-M-dia-F-sica_1718754596_g.jpg" />
+                                        <div class="card-body">
+                                            <h4 class="card-title">Baldur's Gate 3 - Mídia Física</h4>
+                                            <p class="card-text">
+                                                <strong>R$ 299,00</strong>
+                                            </p>
+                                            <a href="#" class="btn btn-primary"><strong>Ver anúncio</strong></a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <article class="card bg-dark text-white">
+                                        <img
+                                            src="https://images-americanas.b2w.io/produtos/6037476601/imagens/jogo-fifa-23-ps5-midia-fisica/6037476601_1_large.jpg" />
+                                        <div class="card-body">
+                                            <h4 class="card-title">E.A. FC 23</h4>
+                                            <p class="card-text">
+                                                <strong>R$ 199,00</strong>
+                                            </p>
+                                            <a href="#" class="btn btn-primary"><strong>Ver anúncio</strong></a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <article class="card bg-dark text-white">
+                                        <img
+                                            src="https://cdn.awsli.com.br/600x450/2443/2443989/produto/192412019f07c0e8722.jpg" />
+                                        <div class="card-body">
+                                            <h4 class="card-title">The Last of Us - Parte I (Remaster)</h4>
+                                            <p class="card-text">
+                                                <strong>R$ 249,00</strong>
+                                            </p>
+                                            <a href="#" class="btn btn-primary"><strong>Ver anúncio</strong></a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

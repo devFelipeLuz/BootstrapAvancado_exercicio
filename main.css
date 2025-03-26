@@ -1,0 +1,162 @@
+body>header {
+    background-color: #0D0D0D;
+    position: sticky;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    border-bottom: 3px solid #E50914;
+    z-index: 1051;
+}
+
+header h1 {
+    color: #E50914;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+section {
+    min-height: 100vh;
+    background-color: #2c2c2c;
+    padding: 70px 32px;
+    color: white;
+    overflow: hidden;
+    z-index: 0;
+}
+
+section h2 {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #E50914;
+    text-transform: uppercase;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #E50914 !important;
+    color: white !important;
+    border-radius: 5px;
+}
+
+.nav-pills .nav-link {
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-link {
+    text-align: center;
+}
+
+.nav-pills .nav-link:hover {
+    background-color: #8A2BE2 !important;
+}
+
+h1, h2, h3, h4, h5 {
+    text-shadow: 0 0 10px #E50914, 0 0 20px #007BFF;
+}
+
+.carousel-item img {
+    height: 25vh;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.carousel-item h2 {
+    position: relative;
+    font-size: 4em;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%; /* Garante que a caption ocupe toda a largura disponível */
+    padding: 0 10px; /* Adiciona um pouco de espaço para garantir que o texto não encoste nas bordas */
+}
+
+.navbar-toggler {
+    border-color: #E50914;
+}
+
+.navbar-toggler-icon {
+    filter: invert(100%);
+}
+
+#menu {
+    padding-top: 10px;
+    text-align: center;
+}
+
+#menu .nav-item {
+    margin: 0 10px; /* Ajuste a margem entre os itens */
+}
+
+#conteudo {
+    padding-top: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+article img {
+    height: 400px;
+    width: auto;
+    object-fit: cover;
+}
+
+.card-subtitle {
+    padding-bottom: 10px;
+}
+
+#btn-cadastro {
+    margin-left: 32px;
+}
+
+.modal {
+    position: fixed;
+    z-index: 1050 !important;
+}
+
+form button {
+    margin-top: 10px;
+}
+
+#conteudo > #menu-produtos {
+    margin-bottom: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Garante que o card tenha altura fixa ou ajustável */
+    height: 600px;
+}
+
+.card-text {
+    overflow: hidden;            /* Esconde o texto que exceder o limite */
+    text-overflow: ellipsis;     /* Adiciona as reticências */
+    white-space: nowrap;         /* Impede que o texto quebre linha */
+    flex-grow: 1;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Faz o conteúdo ocupar o espaço disponível */
+}
+
+.card-body .btn {
+    align-self: flex-start; /* Mantém os botões alinhados à esquerda */
+    margin-top: auto; /* Empurra os botões para a parte inferior do card */
+}
+
+@media screen and (max-width:767px) {
+    #btn-cadastro {
+        margin-left: 0;
+    }
+}
